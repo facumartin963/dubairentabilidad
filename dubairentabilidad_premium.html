@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Rentabilidad - Inversión Inmobiliaria Premium | 0% Impuestos + Golden Visa</title>
+    <meta name="description" content="Invierta en Dubai con 0% impuestos y Golden Visa garantizada. ROI 12-18% anual. Análisis exclusivos y oportunidades inmobiliarias para inversores españoles.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #c9b037 0%, #d4af37 30%, #f4d03f 100%);
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Dubai Theme Colors */
+        :root {
+            --dubai-gold: #d4af37;
+            --dubai-blue: #1e3a8a;
+            --dubai-red: #dc2626;
+            --success-green: #059669;
+            --luxury-black: #1f2937;
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Glassmorphism Effect */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+        }
+
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background: var(--glass-bg);
+            transform: translateY(-2px);
+        }
+
+        .cta-nav {
+            background: linear-gradient(45deg, var(--dubai-gold), #f1c40f);
+            color: white !important;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23c9b037;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%23d4af37;stop-opacity:0.3" /></linearGradient></defs><rect width="1000" height="1000" fill="url(%23grad1)"/></svg>');
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            color: white;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, var(--dubai-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dubai-gold);
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            padding: 2rem;
+            text-align: center;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-text {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--dubai-gold), #f1c40f);
+            color: white;
+            padding: 1.5rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.6);
+        }
+
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, var(--luxury-black), #374151);
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stats h2 {
+            color: var(--dubai-gold);
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--dubai-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Investment Zones */
+        .zones {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .zones h2 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .zones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .zone-card {
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zone-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--dubai-gold), transparent);
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .zone-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .zone-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .zone-roi {
+            background: var(--success-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .zone-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .zone-features li {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .zone-features li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--dubai-blue), #1e40af);
+        }
+
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process h2 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            background: var(--dubai-gold);
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .step h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        /* Lead Capture */
+        .lead-capture {
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, var(--luxury-black), #111827);
+        }
+
+        .capture-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .capture-container h2 {
+            color: var(--dubai-gold);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .lead-form {
+            padding: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            color: white;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .investment-range {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .range-option {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .range-option:hover,
+        .range-option.selected {
+            background: var(--dubai-gold);
+            border-color: var(--dubai-gold);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            padding: 2rem;
+            border-left: 4px solid var(--dubai-gold);
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 1rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: var(--dubai-gold);
+            font-weight: bold;
+        }
+
+        .testimonial-details {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--luxury-black);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--dubai-gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .investment-range {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Floating elements */
+        .floating {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .floating-1 {
+            top: 15%;
+            left: 5%;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-2 {
+            top: 70%;
+            right: 10%;
+            font-size: 1.5rem;
+            opacity: 0.1;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        .floating-3 {
+            top: 40%;
+            right: 5%;
+            font-size: 1.8rem;
+            opacity: 0.05;
+            animation: float 12s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            background: #25d366;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating floating-1">🏗️</div>
+    <div class="floating floating-2">💰</div>
+    <div class="floating floating-3">🇦🇪</div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/+34600000000?text=Hola,%20estoy%20interesado%20en%20invertir%20en%20Dubai" class="whatsapp-float" target="_blank">
+        📱
+    </a>
+
+    <!-- Header -->
+    <header class="header glass-dark">
+        <nav class="nav">
+            <a href="#" class="logo">Dubai Rentabilidad</a>
+            <ul class="nav-links">
+                <li><a href="#zonas">Zonas Premium</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#testimonios">Casos Éxito</a></li>
+                <li><a href="#contacto" class="cta-nav">Análisis Gratuito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in-up">
+            <h1>Construya un Patrimonio Global en Dubai</h1>
+            <div class="subtitle">0% Impuestos + Golden Visa + ROI 12-18% Anual</div>
+            <p>Análisis exclusivos y acceso VIP a las mejores oportunidades inmobiliarias de Dubai para inversores españoles inteligentes.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">💎</div>
+                    <div class="benefit-title">ROI 12-18% Anual</div>
+                    <div class="benefit-text">Rentabilidad garantizada a través de alquileres y apreciación de capital en el mercado inmobiliario más dinámico del mundo.</div>
+                </div>
+                
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">🛡️</div>
+                    <div class="benefit-title">0% Impuestos</div>
+                    <div class="benefit-text">Sin impuestos sobre renta personal, ganancias de capital, ni herencias. Su rendimiento es 100% suyo.</div>
+                </div>
+                
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">🌟</div>
+                    <div class="benefit-title">Golden Visa</div>
+                    <div class="benefit-text">Residencia para usted y su familia en una de las ciudades más seguras y cosmopolitas del mundo.</div>
+                </div>
+                
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">🔒</div>
+                    <div class="benefit-title">Acceso Exclusivo</div>
+                    <div class="benefit-text">Oportunidades pre-lanzamiento y deals privados no disponibles para el público general.</div>
+                </div>
+            </div>
+            
+            <a href="#contacto" class="cta-button">📊 Análisis de Rentabilidad Gratuito</a>
+            <a href="#zonas" class="cta-button cta-secondary">🏙️ Ver Zonas Premium</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <h2>🚀 Por Qué Dubai es la Meca de los Inversores</h2>
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-number">+25%</div>
+                    <div class="stat-label">Crecimiento precio propiedades 2024</div>
+                </div>
+                
+                <div class="stat-card glass">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">Impuestos sobre ganancias de capital</div>
+                </div>
+                
+                <div class="stat-card glass">
+                    <div class="stat-number">€2.1M</div>
+                    <div class="stat-label">Inversión mínima Golden Visa</div>
+                </div>
+                
+                <div class="stat-card glass">
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Visitantes anuales (récord mundial)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Zones -->
+    <section class="zones" id="zonas">
+        <h2>🏙️ Las 5 Zonas con Mayor Potencial de Crecimiento 2025</h2>
+        <div class="zones-grid">
+            <div class="zone-card glass">
+                <div class="zone-content">
+                    <div class="zone-title">🌊 Dubai Marina & JBR</div>
+                    <div class="zone-roi">ROI: 15-18% anual</div>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">
+                        Zona premium con vista al mar, perfecta para alquileres de lujo y Airbnb de alta ocupación.
+                    </p>
+                    <ul class="zone-features">
+                        <li>Alquileres €3,000-5,000/mes por apartamento</li>
+                        <li>Ocupación Airbnb 85%+ anual</li>
+                        <li>Apreciación capital 12-15% anual</li>
+                        <li>Golden Visa garantizada +€2.1M</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="zone-card glass">
+                <div class="zone-content">
+                    <div class="zone-title">🏗️ Downtown Dubai</div>
+                    <div class="zone-roi">ROI: 12-16% anual</div>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">
+                        El corazón financiero con Burj Khalifa. Máxima liquidez y prestigio internacional.
+                    </p>
+                    <ul class="zone-features">
+                        <li>Propiedades desde €1.5M</li>
+                        <li>Alquileres garantizados a corporaciones</li>
+                        <li>Liquidez inmediata</li>
+                        <li>Portal global para business</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="zone-card glass">
+                <div class="zone-content">
+                    <div class="zone-title">🌴 Palm Jumeirah</div>
+                    <div class="zone-roi">ROI: 14-17% anual</div>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">
+                        La isla artificial más exclusiva del mundo. Inversión de ultra-lujo con escasez limitada.
+                    </p>
+                    <ul class="zone-features">
+                        <li>Villas desde €3M, apartamentos €2M+</li>
+                        <li>Ocupación VIP 90%+</li>
+                        <li>Apreciación 20%+ últimos 2 años</li>
+                        <li>Símbolo de estatus global</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="zone-card glass">
+                <div class="zone-content">
+                    <div class="zone-title">🚀 Business Bay</div>
+                    <div class="zone-roi">ROI: 13-16% anual</div>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">
+                        Distrito financiero en expansión. Perfecto para profesionales jóvenes y empresas.
+                    </p>
+                    <ul class="zone-features">
+                        <li>Studios desde €400K</li>
+                        <li>Alta demanda alquiler corporativo</li>
+                        <li>Desarrollo acelerado hasta 2030</li>
+                        <li>ROI rápido en propiedades pequeñas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="zone-card glass">
+                <div class="zone-content">
+                    <div class="zone-title">🏖️ Jumeirah Beach Residence</div>
+                    <div class="zone-roi">ROI: 14-17% anual</div>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">
+                        Zona residencial premium con playa privada. Ideal para familias adineradas y turismo de lujo.
+                    </p>
+                    <ul class="zone-features">
+                        <li>Acceso directo a playa privada</li>
+                        <li>Comunidad internacional exclusiva</li>
+                        <li>Alquileres familiares de larga duración</li>
+                        <li>Infraestructura clase mundial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="proceso">
+        <div class="process-container">
+            <h2>🛣️ Su Camino Hacia la Libertad Financiera en Dubai</h2>
+            <div class="process-steps">
+                <div class="step glass">
+                    <div class="step-number">1</div>
+                    <h3>Análisis Personalizado</h3>
+                    <p>Evaluamos su perfil financiero, objetivos de inversión y preferencias para diseñar una estrategia a medida.</p>
+                </div>
+                
+                <div class="step glass">
+                    <div class="step-number">2</div>
+                    <h3>Selección de Propiedades</h3>
+                    <p>Acceso exclusivo a pre-lanzamientos y deals privados con desarrolladores premium de Dubai.</p>
+                </div>
+                
+                <div class="step glass">
+                    <div class="step-number">3</div>
+                    <h3>Gestión Legal Completa</h3>
+                    <p>Nuestros abogados especializados gestionan toda la documentación y procesos de Golden Visa.</p>
+                </div>
+                
+                <div class="step glass">
+                    <div class="step-number">4</div>
+                    <h3>Gestión de Alquileres</h3>
+                    <p>Optimizamos sus propiedades para máxima rentabilidad con gestión profesional 24/7 y marketing premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonios">
+        <h2>💼 Casos de Éxito de Inversores Españoles</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial glass">
+                <div class="testimonial-text">
+                    "Invertí €2.3M en Marina en 2022. Ya he recuperado €780K en alquileres y la propiedad se ha revalorizado un 31%. Mi Golden Visa me permite vivir libre de impuestos españoles."
+                </div>
+                <div class="testimonial-author">Carlos M., Empresario</div>
+                <div class="testimonial-details">Madrid → Dubai Marina, €2.3M invertidos</div>
+            </div>
+            
+            <div class="testimonial glass">
+                <div class="testimonial-text">
+                    "Compré 3 apartamentos en Business Bay por €1.8M total. Los alquileres me generan €22K mensuales y ya tengo ofertas 40% superiores al precio de compra."
+                </div>
+                <div class="testimonial-author">Ana R., Inversora</div>
+                <div class="testimonial-details">Barcelona → Business Bay, Portfolio €1.8M</div>
+            </div>
+            
+            <div class="testimonial glass">
+                <div class="testimonial-text">
+                    "Mi villa en Palm Jumeirah de €4.2M genera €35K/mes en alquileres VIP. En 18 meses se ha revalorizado €1.1M. Dubai cambió mi vida financiera completamente."
+                </div>
+                <div class="testimonial-author">Miguel L., CEO Tech</div>
+                <div class="testimonial-details">Valencia → Palm Jumeirah, €4.2M villa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture -->
+    <section class="lead-capture" id="contacto">
+        <div class="capture-container">
+            <h2>📊 Análisis de Rentabilidad Personalizado GRATUITO</h2>
+            <p style="color: white; font-size: 1.3rem; margin-bottom: 2rem;">
+                Descubra exactamente cuánto puede ganar y cómo obtener su Golden Visa en Dubai
+            </p>
+            
+            <div class="lead-form glass">
+                <form id="leadForm" onsubmit="handleLeadSubmission(event)">
+                    <div class="form-group">
+                        <label>Nombre Completo *</label>
+                        <input type="text" id="fullName" required placeholder="Su nombre y apellidos">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" id="email" required placeholder="su.email@gmail.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Teléfono (WhatsApp) *</label>
+                        <input type="tel" id="phone" required placeholder="+34 600 000 000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ciudad de Residencia</label>
+                        <input type="text" id="city" placeholder="Madrid, Barcelona, Valencia...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Presupuesto de Inversión *</label>
+                        <div class="investment-range" id="investmentRange">
+                            <div class="range-option" data-value="500k-1m">€500K - €1M</div>
+                            <div class="range-option" data-value="1m-2m">€1M - €2M</div>
+                            <div class="range-option" data-value="2m-5m">€2M - €5M</div>
+                            <div class="range-option" data-value="5m+">€5M+</div>
+                        </div>
+                        <input type="hidden" id="budget" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Objetivo Principal</label>
+                        <select id="objective">
+                            <option value="">Seleccione su objetivo</option>
+                            <option value="rentabilidad">Máxima rentabilidad</option>
+                            <option value="golden-visa">Golden Visa + fiscalidad</option>
+                            <option value="diversificacion">Diversificación internacional</option>
+                            <option value="residencia">Residencia en Dubai</option>
+                            <option value="herencia">Planificación patrimonial</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Timeframe de Inversión</label>
+                        <select id="timeframe">
+                            <option value="">¿Cuándo desea invertir?</option>
+                            <option value="inmediato">Inmediatamente</option>
+                            <option value="3-meses">En los próximos 3 meses</option>
+                            <option value="6-meses">En los próximos 6 meses</option>
+                            <option value="1-año">En el próximo año</option>
+                            <option value="explorando">Solo explorando opciones</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Comentarios Adicionales</label>
+                        <textarea id="comments" placeholder="Cuéntenos más sobre sus objetivos específicos, experiencia previa en inversiones inmobiliarias, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 2rem;">
+                        🚀 Solicitar Análisis Gratuito Ahora
+                    </button>
+                    
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.7); text-align: center;">
+                        ✅ Análisis en 24 horas • ✅ Confidencialidad total • ✅ Sin compromiso
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Main Footer Content -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                
+                <!-- Company Info -->
+                <div>
+                    <div style="font-size: 1.8rem; font-weight: bold; color: var(--dubai-gold); margin-bottom: 1rem;">
+                        Dubai Rentabilidad
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;">
+                        Especialistas en inversión inmobiliaria premium en Dubai. Ayudamos a inversores españoles a construir patrimonio global con 0% impuestos y Golden Visa garantizada.
+                    </p>
+                    
+                    <!-- Social Media -->
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://linkedin.com/company/dubairentabilidad" target="_blank" style="background: var(--dubai-gold); color: white; padding: 0.75rem; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;">
+                            💼
+                        </a>
+                        <a href="https://instagram.com/dubairentabilidad" target="_blank" style="background: var(--dubai-gold); color: white; padding: 0.75rem; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;">
+                            📸
+                        </a>
+                        <a href="https://wa.me/+34600000000" target="_blank" style="background: #25d366; color: white; padding: 0.75rem; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;">
+                            📱
+                        </a>
+                        <a href="https://youtube.com/@dubairentabilidad" target="_blank" style="background: #ff0000; color: white; padding: 0.75rem; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;">
+                            📹
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 style="color: var(--dubai-gold); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;">
+                        🏗️ Servicios Premium
+                    </h4>
+                    <ul style="list-style: none; color: rgba(255,255,255,0.8); line-height: 2;">
+                        <li><a href="#analisis-rentabilidad" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">📊 Análisis de Rentabilidad</a></li>
+                        <li><a href="#golden-visa" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🌟 Tramitación Golden Visa</a></li>
+                        <li><a href="#gestion-propiedades" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🏠 Gestión de Propiedades</a></li>
+                        <li><a href="#asesoria-fiscal" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">💰 Asesoría Fiscal Internacional</a></li>
+                        <li><a href="#oportunidades-vip" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">💎 Acceso Oportunidades VIP</a></li>
+                        <li><a href="#financiacion" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🏦 Financiación Internacional</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Investment Zones -->
+                <div>
+                    <h4 style="color: var(--dubai-gold); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;">
+                        🏙️ Zonas de Inversión
+                    </h4>
+                    <ul style="list-style: none; color: rgba(255,255,255,0.8); line-height: 2;">
+                        <li><a href="#dubai-marina" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🌊 Dubai Marina & JBR</a></li>
+                        <li><a href="#downtown-dubai" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🏗️ Downtown Dubai</a></li>
+                        <li><a href="#palm-jumeirah" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🌴 Palm Jumeirah</a></li>
+                        <li><a href="#business-bay" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🚀 Business Bay</a></li>
+                        <li><a href="#dubai-hills" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">⛰️ Dubai Hills Estate</a></li>
+                        <li><a href="#city-walk" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">🚶 City Walk</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 style="color: var(--dubai-gold); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;">
+                        📞 Contacto Directo
+                    </h4>
+                    <div style="color: rgba(255,255,255,0.8); line-height: 2;">
+                        <div style="margin-bottom: 1rem;">
+                            <strong style="color: white;">🇪🇸 Oficina España:</strong><br>
+                            📍 Paseo de la Castellana, 95<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;28046 Madrid, España<br>
+                            📞 +34 910 123 456<br>
+                            📧 spain@dubairentabilidad.com
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <strong style="color: white;">🇦🇪 Oficina Dubai:</strong><br>
+                            📍 DIFC, Gate Village 4<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Dubai, UAE<br>
+                            📞 +971 4 123 4567<br>
+                            📧 dubai@dubairentabilidad.com
+                        </div>
+                        
+                        <div>
+                            <strong style="color: var(--dubai-gold);">⏰ Horarios:</strong><br>
+                            Lun-Vie: 9:00-19:00 CET<br>
+                            Sáb: 10:00-14:00 CET<br>
+                            <em style="font-size: 0.9rem;">Atención 24/7 para urgencias</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); border-bottom: 1px solid rgba(255,255,255,0.2); padding: 2rem 0; margin: 2rem 0;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
+                        <div style="color: var(--dubai-gold); font-weight: bold;">RERA Licensed</div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Licencia Oficial Dubai</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+                        <div style="color: var(--dubai-gold); font-weight: bold;">Escrow Protected</div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Inversiones Protegidas</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+                        <div style="color: var(--dubai-gold); font-weight: bold;">500+ Inversores</div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Satisfechos desde 2019</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                        <div style="color: var(--dubai-gold); font-weight: bold;">€50M+ Gestionados</div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">En inversiones premium</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌟</div>
+                        <div style="color: var(--dubai-gold); font-weight: bold;">200+ Golden Visas</div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Tramitadas exitosamente</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div style="background: linear-gradient(45deg, var(--dubai-gold), #f1c40f); padding: 2rem; border-radius: 15px; margin: 2rem 0; text-align: center;">
+                <h4 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                    📈 Análisis Semanal del Mercado Dubai
+                </h4>
+                <p style="color: white; margin-bottom: 1.5rem; opacity: 0.9;">
+                    Reciba reportes exclusivos, oportunidades pre-lanzamiento y análisis de expertos cada semana
+                </p>
+                <div style="display: flex; gap: 1rem; max-width: 400px; margin: 0 auto; flex-wrap: wrap;">
+                    <input type="email" id="newsletterEmail" placeholder="su.email@gmail.com" style="flex: 1; padding: 1rem; border: none; border-radius: 25px; font-size: 1rem; min-width: 200px;">
+                    <button onclick="subscribeNewsletter()" style="background: var(--luxury-black); color: white; padding: 1rem 2rem; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; white-space: nowrap;">
+                        Suscribirse Gratis
+                    </button>
+                </div>
+                <div style="font-size: 0.85rem; color: white; opacity: 0.8; margin-top: 0.5rem;">
+                    ✅ Sin spam • ✅ Cancele cuando quiera • ✅ Solo contenido premium
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <a href="#aviso-legal" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">Aviso Legal</a>
+                <a href="#politica-privacidad" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">Política de Privacidad</a>
+                <a href="#politica-cookies" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">Política de Cookies</a>
+                <a href="#terminos-servicio" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">Términos de Servicio</a>
+                <a href="#compliance" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">Compliance GDPR</a>
+                <a href="#mifid-ii" style="color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease;">MiFID II</a>
+            </div>
+            
+            <!-- Copyright -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem; margin-top: 2rem;">
+                <div style="text-align: center;">
+                    <p style="margin-bottom: 1rem; opacity: 0.9; font-size: 1.1rem;">
+                        <strong>Dubai Rentabilidad</strong> - Especialistas en Inversión Inmobiliaria Premium
+                    </p>
+                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">
+                        © 2025 Dubai Rentabilidad SL. Todos los derechos reservados. | Licencia RERA Dubai: <strong>DLD-123456789</strong>
+                    </p>
+                    <p style="font-size: 0.85rem; opacity: 0.6; line-height: 1.5; max-width: 800px; margin: 0 auto;">
+                        <strong>⚠️ Disclaimer Importante:</strong> Las rentabilidades pasadas no garantizan rentabilidades futuras. 
+                        Toda inversión conlleva riesgo de pérdida de capital. Los datos de ROI son estimaciones basadas en análisis históricos 
+                        y condiciones de mercado actuales. Consulte con asesores fiscales y legales locales sobre implicaciones específicas. 
+                        Dubai Rentabilidad SL está registrada en España y opera bajo licencia RERA en Dubai, UAE.
+                    </p>
+                </div>
+                
+                <!-- Back to Top -->
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="#" onclick="scrollToTop()" style="background: var(--dubai-gold); color: white; padding: 1rem; border-radius: 50%; text-decoration: none; display: inline-block; transition: all 0.3s ease;">
+                        ⬆️
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
